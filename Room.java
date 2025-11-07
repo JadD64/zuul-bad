@@ -18,32 +18,17 @@ public class Room
 {
     public String description;
     private HashMap<String, Room> exits;
-    public Room northExit;
-    public Room southExit;
-    public Room eastExit;
-    public Room westExit;
 
+    
     public Room(String description)
     {
         this.description = description;
-        exits = new HashMap<String, Room>();
+        exits = new HashMap<>();
     }
     
     public Room getExit (String direction) 
     {
-        if(direction.equals("north")){
-            return northExit;
-        }
-        if(direction.equals("east")){
-            return eastExit;
-        }
-        if(direction.equals("south")){
-            return southExit;
-        }
-        if(direction.equals("west")){
-            return westExit;
-        }
-        return null;
+        return exits.get(direction);
     }
     
 
