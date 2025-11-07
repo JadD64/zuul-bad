@@ -5,3 +5,4 @@
 help explains the context/setting of the game, and writing anything has the the terminal print saying it doesn't know what you mean.
 - 5 rooms: lab, pub, theater, office, and outside
 
+9. keySet() method returns a set containing all keys in the map (like a hashMap)
